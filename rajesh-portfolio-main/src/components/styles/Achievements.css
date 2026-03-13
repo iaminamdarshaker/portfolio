@@ -1,0 +1,110 @@
+.achieve-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.achieve-container {
+  width: var(--cWidth);
+  max-width: var(--cMaxWidth);
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.achieve-container h2 {
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 50px;
+  font-family: var(--fontFamily), sans-serif;
+  color: var(--textColor);
+}
+
+.achieve-container h2 span {
+  font-family: inherit;
+  color: var(--accentColor);
+}
+
+.achieve-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.achieve-card {
+  position: relative;
+  padding: 30px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.achieve-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.achieve-card:hover .achieve-border,
+.achieve-active .achieve-border {
+  opacity: 1;
+}
+
+.achieve-card:hover,
+.achieve-active {
+  transform: translateY(-5px);
+  background: rgba(20, 184, 166, 0.05);
+}
+
+.achieve-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.achieve-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.achieve-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--textColor2);
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .achieve-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .achieve-container h2 {
+    font-size: 60px;
+    line-height: 65px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .achieve-container h2 {
+    font-size: 80px;
+    line-height: 85px;
+  }
+  
+  .achieve-content p {
+    font-size: 20px;
+  }
+}
