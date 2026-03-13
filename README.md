@@ -1,22 +1,16 @@
-# Shakeroddin Inamdar - Portfolio
+# My Portfolio Wesbite - Overview 🚀
 
-A high-performance personal portfolio website for Shakeroddin Inamdar, Digital Marketing Manager.
+This repository contains the open source version of my porfolio website.
+Do check it out!
 
-## Features
-- Modern 3D Tech Stack visualization
-- Responsive Design
-- GSAP Animations
-- Detailed Career Timeline
-- Project Carousel
+## Instructions 🛠️
 
-## Tech Stack
-- React
-- Vite
-- GSAP
-- Three.js / React Three Fiber
-- React Icons
+I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
 
-## Getting Started
-1. Clone the repository
-2. Run `npm install`
-3. Run `npm run dev` to start the development server
+**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
+
+![Portfolio-Preview](public/images/preview.png)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
